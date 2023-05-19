@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import { defaults } from '../defaults'
+import { defaults } from './defaults'
 
 // You can override the default Playwright test timeout of 30s
 // test.setTimeout(60_000)

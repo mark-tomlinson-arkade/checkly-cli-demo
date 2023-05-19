@@ -1,6 +1,6 @@
 // @ts-ignore
 import { test, expect } from '@playwright/test'
-import { defaults } from '../../../defaults'
+import { defaults } from './defaults'
 
 /**
  * This spec file will be picked up and turned into a Browser Check, using the defaults from the checkly.config.ts file
