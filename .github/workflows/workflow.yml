@@ -34,7 +34,7 @@ jobs:
         run: yarn install
       - name: Run checks
         id: run-checks
-        run: npx checkly:test -- -e ENVIRONMENT_URL=${{ env.ENVIRONMENT_URL }}
+        run: yarn checkly:test -- -e ENVIRONMENT_URL=${{ env.ENVIRONMENT_URL }}
         continue-on-error: true
       - name: Deploy checks
         if: steps.run-checks.outcome == 'success'
