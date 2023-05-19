@@ -38,6 +38,6 @@ jobs:
         continue-on-error: false
       - name: Deploy checks
         if: steps.run-checks.outcome == 'success'
-        run: npx checkly:deploy
+        run: yarn checkly:deploy
 
 
